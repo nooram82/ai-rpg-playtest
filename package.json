@@ -1,0 +1,32 @@
+{
+  "name": "ai-rpg-playtest",
+  "version": "0.1.0",
+  "description": "Scripted AI players that play your AI RPG for dozens of turns and check memory, player agency, fairness and repetition.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nooram82/ai-rpg-playtest.git"
+  },
+  "homepage": "https://github.com/nooram82/ai-rpg-playtest#readme",
+  "type": "module",
+  "bin": {
+    "rpg-playtest": "dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test dist/test/*.test.js",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3"
+  }
+}

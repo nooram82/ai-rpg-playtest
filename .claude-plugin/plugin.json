@@ -1,0 +1,19 @@
+{
+  "name": "rpg-playtest",
+  "version": "0.1.0",
+  "description": "AI players playtest your AI RPG for dozens of turns (memory, puppeting, fairness, refused quests, consequences, repetition), then subagents trace each problem to the code or prompt behind it.",
+  "author": {
+    "name": "Worldtable",
+    "url": "https://worldtable.gg"
+  },
+  "homepage": "https://worldtable.gg",
+  "license": "MIT",
+  "keywords": [
+    "rpg",
+    "ai-dungeon-master",
+    "playtest",
+    "llm-evaluation",
+    "interactive-fiction"
+  ],
+  "repository": "https://github.com/nooram82/ai-rpg-playtest"
+}

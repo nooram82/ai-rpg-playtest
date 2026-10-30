@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# The rpg-playtest CLI from this checkout, built on first use. As a Claude Code plugin this
+# folder is on the Bash PATH, so skills can call `rpg-playtest` directly.
+set -e
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ ! -f "$ROOT/dist/src/cli.js" ]; then
+  echo "Building rpg-playtest (first run)..." >&2
+  (cd "$ROOT" && npm install --no-audit --no-fund --loglevel=error && npm run build --silent) >&2
+fi
+exec node "$ROOT/dist/src/cli.js" "$@"

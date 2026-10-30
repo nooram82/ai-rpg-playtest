@@ -1,0 +1,13 @@
+{
+  "game": {
+    "type": "chat",
+    "model": { "provider": "codex", "model": "default", "effort": "low" },
+    "systemPromptFile": "gm.md",
+    "opening": "Begin."
+  },
+  "player": { "provider": "codex", "model": "default", "effort": "low" },
+  "judge": { "provider": "codex", "model": "default", "effort": "medium" },
+  "turns": 30,
+  "personas": ["merchant", "seeker", "brawler"],
+  "setting": "A fantasy text RPG run by a chat model. It opens on its own; just start playing."
+}

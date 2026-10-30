@@ -1,0 +1,13 @@
+{
+  "game": {
+    "type": "chat",
+    "model": { "provider": "claude-code", "model": "haiku" },
+    "systemPromptFile": "gm.md",
+    "opening": "Begin."
+  },
+  "player": { "provider": "claude-code", "model": "haiku", "effort": "low" },
+  "judge": { "provider": "claude-code", "model": "sonnet" },
+  "turns": 30,
+  "personas": ["merchant", "seeker", "brawler"],
+  "setting": "A fantasy text RPG run by a chat model. It opens on its own; just start playing."
+}

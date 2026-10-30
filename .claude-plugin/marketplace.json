@@ -1,0 +1,14 @@
+{
+  "name": "rpg-playtest",
+  "description": "Playtesting tools for AI RPGs and AI storytellers.",
+  "owner": {
+    "name": "Worldtable"
+  },
+  "plugins": [
+    {
+      "name": "rpg-playtest",
+      "source": "./",
+      "description": "AI players playtest your AI RPG, then subagents trace each problem to the code behind it."
+    }
+  ]
+}
